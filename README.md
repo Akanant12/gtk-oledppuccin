@@ -2,7 +2,7 @@
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 	Catppuccin for <a href="https://gtk.org/">GTK</a>
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
+	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/oledppuccin-gtk.png" height="30" width="0px"/>
 </h3>
 
 <p align="center">
@@ -19,6 +19,7 @@
 
 This GTK theme is based on the [Colloid](https://github.com/vinceliuice/Colloid-gtk-theme) theme made by [Vinceliuice](https://github.com/vinceliuice)
 
+***This is a personal fork of [catppuccin/gtk](https://github.com/catppuccin/gtk) with OLED colours. Please contribute to the main repository.*** 
 ## Usage
 
 ### Requirements
