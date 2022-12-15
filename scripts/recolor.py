@@ -43,25 +43,25 @@ def recolor(flavor, accent: str):
     replacetext(f"{work_dir}/gtkrc.sh", "background_light='#FFFFFF'",
                 f"background_light='#{Flavour.latte().base.hex}'")  # use latte_base for background_light
     replacetext(f"{work_dir}/gtkrc.sh", "background_dark='#0F0F0F'",
-                f"background_dark='#{flavor.base.hex}'")
+                f"background_dark='#020202'")
     replacetext(f"{work_dir}/gtkrc.sh", "background_darker='#121212'",
-                f"background_darker='#{flavor.mantle.hex}'")
+                f"background_darker='#010101'")
     replacetext(f"{work_dir}/gtkrc.sh",
-                "background_alt='#212121'", f"background_alt='#{flavor.crust.hex}'")
+                "background_alt='#212121'", f"background_alt='#000000'")
     replacetext(f"{work_dir}/gtkrc.sh", "titlebar_light='#F2F2F2'",
                 f"titlebar_light='#{Flavour.latte().crust.hex}'")  # use latte_crust for titlebar_light
     replacetext(f"{work_dir}/gtkrc.sh", "titlebar_dark='#030303'",
-                f"titlebar_dark='#{flavor.crust.hex}'")
+                f"titlebar_dark='#000000'")
     replacetext(f"{work_dir}/gtkrc.sh", "background_dark='#2C2C2C'",
-                f"background_dark='#{flavor.base.hex}'")
+                f"background_dark='#020202'")
     replacetext(f"{work_dir}/gtkrc.sh", "background_darker='#3C3C3C'",
-                f"background_darker='#{flavor.mantle.hex}'")
+                f"background_darker='#010101'")
     replacetext(f"{work_dir}/gtkrc.sh",
-                "background_alt='#464646'", f"background_alt='#{flavor.crust.hex}'")
+                "background_alt='#464646'", f"background_alt='#000000'")
     replacetext(f"{work_dir}/gtkrc.sh",
                 "titlebar_light='#F2F2F2'", f"titlebar_light='#{Flavour.latte().crust.hex}'")
     replacetext(f"{work_dir}/gtkrc.sh",
-                "titlebar_dark='#242424'", f"titlebar_dark='#{flavor.crust.hex}'")
+                "titlebar_dark='#242424'", f"titlebar_dark='#000000'")
 
     print("Mod SASS Color_Palette_default")
     recolor_accent(
@@ -70,11 +70,11 @@ def recolor(flavor, accent: str):
     # Greys
     if flavor == Flavour.latte():  # Hardcode till someone smarter than me comes along
         replacetext(f"{src_dir}/sass/_color-palette-default.scss",
-                    "grey-050: #FAFAFA", f"grey-050: #{flavor.crust.hex}")
+                    "grey-050: #FAFAFA", f"grey-050: #000000")
         replacetext(f"{src_dir}/sass/_color-palette-default.scss",
-                    "grey-100: #F2F2F2", f"grey-100: #{flavor.mantle.hex}")
+                    "grey-100: #F2F2F2", f"grey-100: #010101")
         replacetext(f"{src_dir}/sass/_color-palette-default.scss",
-                    "grey-150: #EEEEEE", f"grey-150: #{flavor.base.hex}")
+                    "grey-150: #EEEEEE", f"grey-150: #020202")
         replacetext(f"{src_dir}/sass/_color-palette-default.scss",
                     "grey-200: #DDDDDD", f"grey-200: #{flavor.surface0.hex}")  # Surface 0 Late
         replacetext(f"{src_dir}/sass/_color-palette-default.scss",
@@ -107,17 +107,17 @@ def recolor(flavor, accent: str):
         replacetext(f"{src_dir}/sass/_color-palette-default.scss",
                     "grey-650: #3C3C3C", f"grey-650: #{flavor.surface0.hex}")  # H $surface $tooltip
         replacetext(f"{src_dir}/sass/_color-palette-default.scss", "grey-700: #2C2C2C",
-                    f"grey-700: #{flavor.base.hex}")  # G $background; $base; titlebar-backdrop; $popover
+                    f"grey-700: #020202")  # G $background; $base; titlebar-backdrop; $popover
         replacetext(f"{src_dir}/sass/_color-palette-default.scss",
-                    "grey-750: #242424", f"grey-750: #{flavor.crust.hex}")  # F $base-alt
+                    "grey-750: #242424", f"grey-750: #000000")  # F $base-alt
         replacetext(f"{src_dir}/sass/_color-palette-default.scss",
-                    "grey-800: #212121", f"grey-800: #{flavor.crust.hex}")  # E $panel-solid;p
+                    "grey-800: #212121", f"grey-800: #000000")  # E $panel-solid;p
         replacetext(f"{src_dir}/sass/_color-palette-default.scss",
                     "grey-850: #121212", f"grey-850: #{flavor.surface1.hex}")  # H Darknes
         replacetext(f"{src_dir}/sass/_color-palette-default.scss",
-                    "grey-900: #0F0F0F", f"grey-900: #{flavor.base.hex}")  # G Darknes
+                    "grey-900: #0F0F0F", f"grey-900: #020202")  # G Darknes
         replacetext(f"{src_dir}/sass/_color-palette-default.scss",
-                    "grey-950: #030303", f"grey-950: #{flavor.crust.hex}")  # F Darknes
+                    "grey-950: #030303", f"grey-950: #000000")  # F Darknes
 
     # Buttons
     replacetext(f"{src_dir}/sass/_color-palette-default.scss",
